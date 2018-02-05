@@ -12,6 +12,7 @@
 </head>
 <body>
 
+<%--//c:out je ochrana proti XSS útokům (aby to nenapdanul někdo tím, že tam někdo napíše nějakej škodlivý kod (javascript, sql...)--%>
 <c:out value="Hello World"/>
 <a href='<spring:url value="/new" htmlEscape="true"/>'>Insert name</a>
 
